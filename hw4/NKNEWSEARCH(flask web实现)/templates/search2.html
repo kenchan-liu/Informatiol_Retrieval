@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>搜索页</title>
+</head>
+<body>
+    <h2 style="font-family:arial;color:red;font-size:60px;;text-align:center">WHAT'S New in nanKai</h2>
+
+    <form action='{{ url_for('.redirect2') }}' method="POST">
+        <table>
+            <tr style = "text-align:center">
+                <td style = "text-align:center">搜索内容：</td>
+                <td style = "text-align:center"><input type="text" name='key1' placeholder="必要关键字"></td>
+                <td style = "text-align:center"><input type="text" name='key2' placeholder="可选关键字"></td>
+                <td style = "text-align:center"><input type="text" name='html' placeholder="html info"></td>
+                <select name="options">
+                  <option  value="search">查询</option>
+                  <option  value = "phrase">短语</option>
+                </select>
+            </tr>
+            <tr>
+                <td><input type="submit" value="高级搜索"></td>
+            </tr>
+            <tr>
+                <td><input type="text"  name="username"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

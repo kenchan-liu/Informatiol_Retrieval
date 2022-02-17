@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>搜索页</title>
+</head>
+<body>
+    <h2 style="font-family:arial;color:red;font-size:60px;;text-align:center">WHAT'S New in nanKai</h2>
+
+    <form action='{{ url_for('.redirect_to_new_url') }}' method="POST">
+        <table>
+            <tr style = "text-align:center">
+                <td style = "text-align:center">搜索内容：</td>
+                <td style = "text-align:center"><input type="text" name='search' placeholder="Search"></td>
+            </tr>
+            <tr>
+                <td><input type="submit" value="搜索"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
